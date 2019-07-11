@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <NasaPictures />
+      <div style={{visibility: "hidden"}}>in here!</div>
     </div>
   );
 }
