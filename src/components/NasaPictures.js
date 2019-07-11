@@ -17,7 +17,7 @@ const NasaPictures = () => {
     `;
     const ContainerDiv = styled.div`
         background-color: #333;
-        padding: 2rem;
+        padding: 1rem 2rem;
         border-radius: 1rem;
         width: 66%;
         margin: 0 auto;
@@ -69,7 +69,7 @@ const NasaPictures = () => {
             <Title>Nasa Photo of the Day</Title>
             <PhotoTitle>{photos.title}</PhotoTitle>
             {!photos.url ? 
-                <h4>Loading...</h4> : 
+                <Loading>Loading...</Loading> : 
                 <img src={photos.url} className="photo" alt="nasa pic of the day" />            
             }
             <Explanation>{photos.explanation}</Explanation>
