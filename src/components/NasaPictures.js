@@ -5,16 +5,16 @@ import styled, { keyframes } from 'styled-components';
 const NasaPictures = () => {
     const [photos, setPhotos] = useState([]);
 
-    const grow = keyframes`
-        from {
-            color: white;
-            transform: scale(1);
-        }
-        to {
-            transform: scale(1.25);
-            color: #ddd;
-        }
-    `;
+    // const grow = keyframes`
+    //     from {
+    //         color: white;
+    //         transform: scale(1);
+    //     }
+    //     to {
+    //         transform: scale(1.25);
+    //         color: #ddd;
+    //     }
+    // `;
     const ContainerDiv = styled.div`
         background-color: #333;
         padding: 1rem 2rem;
@@ -27,11 +27,18 @@ const NasaPictures = () => {
         width: 61%;
         margin: 0 auto;
         padding: 0;
+        transition: 1s;
         &:hover {
-            animation: ${grow} 0.75s ease-in;
-            animation-fill-mode: forwards;
+            transform: scale(1.25);
+            color: #bbb;
+
         }
+
     `;
+    // &:hover {
+    //     animation: ${grow} 0.75s ease-in;
+    //     animation-fill-mode: forwards;
+    // }
     const Explanation = styled.p`
         background-color: #222;
         padding: 2rem;
