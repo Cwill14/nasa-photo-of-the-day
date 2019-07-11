@@ -25,7 +25,7 @@ const NasaPictures = () => {
         <div>
             <h1>Nasa Photo of the Day</h1>
             <h3>{photos.title}</h3>
-            <img src={photos.url} alt="nasa pic of the day" />
+            <img src={photos.url} className="photo" alt="nasa pic of the day" />
             <p>{photos.explanation}</p>
         </div>
     );
