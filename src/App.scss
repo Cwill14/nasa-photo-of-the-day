@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0 5rem;
+}
+.photo {
+  width: 66%;
+  height:66%;
+  margin: 2rem 0;
+  border: 1px solid white;
+  border-radius: 2.5rem;
+  &:hover {
+  transform: scale(1.015);
+  }
+}
